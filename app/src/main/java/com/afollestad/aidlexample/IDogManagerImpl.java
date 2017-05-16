@@ -33,11 +33,6 @@ public abstract class IDogManagerImpl extends Binder implements IDogManager {
         }
         return new Proxy(obj);
     }
-
-
-
-
-
     @Override
     protected boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException {
         Log.d("TAG", "onTransact: local"+code);
